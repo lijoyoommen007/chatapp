@@ -1,0 +1,59 @@
+[
+  {
+    "label": "Home",
+    "link": "/",
+    "className": "nav-link scrollto "
+  },
+  {
+    "label": "Products",
+    "link": "#",
+    "className": "dropdown",
+    "subMenu": [
+      {
+        "label": "Veneer Door",
+        "link": "/veener-doors",
+        "className": ""
+      },
+      {
+        "label": "Laminate Door",
+        "link": "/veener-doors",
+        "className": ""
+      },
+      {
+        "label": "Skin Door",
+        "link": "/veener-doors",
+        "className": ""
+      },
+      {
+        "label": "Royal Paint Door",
+        "link": "/veener-doors",
+        "className": ""
+      }
+    ]
+  },
+  {
+    "label": "Pre Hung Door",
+    "link": "",
+    "className": "nav-link scrollto"
+  },
+  {
+    "label": "Features",
+    "link": "",
+    "className": "nav-link scrollto"
+  },
+  {
+    "label": "Client",
+    "link": "#chefs",
+    "className": "nav-link scrollto"
+  },
+  {
+    "label": "Contact",
+    "link": "",
+    "className": "nav-link scrollto"
+  },
+  {
+    "label": "Gallery",
+    "link": "",
+    "className": "nav-link scrollto"
+  }
+]

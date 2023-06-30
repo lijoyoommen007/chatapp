@@ -1,0 +1,18 @@
+[
+    {
+      "imageSrc": "/img/slide/Cover-1.avif",
+      "caption": "First slide label",
+      "description": "Some representative placeholder content for the first slide."
+    },
+    {
+      "imageSrc": "/img/slide/Interior-Home-Designs-in-Sri-Lanka.jpg",
+      "caption": "Second slide label",
+      "description": "Some representative placeholder content for the second slide."
+    },
+    {
+      "imageSrc": "/img/slide/interior-wall-design.avif",
+      "caption": "Third slide label",
+      "description": "Some representative placeholder content for the third slide."
+    }
+  ]
+  

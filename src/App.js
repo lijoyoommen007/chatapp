@@ -1,39 +1,28 @@
-import { Login } from './pages/Login';
 import './App.css';
-import { Register } from './pages/Register';
-import  Home from './pages/Home';
-import{
-  BrowserRouter,
+import Register from './pages/Register';
+import Home from './pages/Home';
+import {
+  BrowserRouter as Router,
   Navigate,
   Route,
-  Router,
   Routes
-} from "react-router-dom"
-import { useContext } from 'react';
-import { AuthContext } from './context/AuthContext';
+} from "react-router-dom";
+import TopBar from './Components/NavBarHeader/TopBar';
+import NavBarHeader from './Components/NavBarHeader/NavBarHeader';
+import DoorsPage from './pages/DoorsPage';
+import veenerData from "./Datas/doorsData.json"
 
 function App() {
-
-  const {currentUser}=useContext(AuthContext)
-
-  const ProtectedRoute = ({ children }) => {
-    if (!currentUser) {
-      return <Navigate to="/login" />;
-    }
-
-    return children
-  };
-
   return (
-    <BrowserRouter>
-       <Routes>
-        <Route path='/'>
-        <Route index element={ <ProtectedRoute><Home/></ProtectedRoute>}/>
-        <Route path='/login' element={<Login/>}/>
-        <Route path='/register' element={<Register/>}/>
-        </Route>
-       </Routes>
-    </BrowserRouter>
+    <Router>
+      <TopBar />
+      <NavBarHeader />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/veener-doors" element={<DoorsPage data={veenerData} />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </Router>
   );
 }
 

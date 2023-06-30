@@ -1,15 +1,23 @@
-import Chat  from '../Components/Chat'
 import React from 'react'
-import Sidebar from '../Components/Sidebar'
+import ImageCarosal from '../Components/Carosal/ImageCarosal'
+import AboutPage from '../Components/About/AboutComponent'
+import WhyUsSection from '../Components/Specialities/Specialities'
+import SpecialsSection from '../Components/SpecialServices/SpecialServices'
+import TestimonialsSection from '../Components/Testimonials/Testimonials'
+import Gallery from '../Components/Gallery/Gallery'
+import ContactUs from '../Components/ContactUs/ContactUs'
 
 function Home() {
   return (
-    <div className='home' >
-        <div className="container">
-            <Sidebar/>
-            <Chat/>
-        </div>
-    </div>
+    <>
+    <ImageCarosal/>
+    <AboutPage/>
+    <WhyUsSection/>
+    <SpecialsSection/>
+    <TestimonialsSection/>
+    <Gallery/>
+    <ContactUs/>
+    </>
   )
 }
 
